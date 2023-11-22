@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: orange;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contenedor-blog {
+    display: grid;
+    height: 970px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    }
+    .contenedor-logo { 
+        grid-area: 1 / 1 / 3 / 2;
+        background-image: url(../imagenes/logo.png);
+        background-size:cover;
+        border: 2px solid black;
+        width: 320px;
+    }
+    .titulo-menu { 
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        grid-area: 1 / 2 / 2 / 4; 
+    }
+    h1{
+        width: 170px;
+        color: white;
+        box-shadow: 10px 10px rgba(100, 20, 158, 0.5);
+    }
+    .parrafo-menu { 
+        display: grid;
+        grid-area: 2 / 2 / 3 / 4; 
+        align-items: center;
+        border: 2px dotted black;
+        color: white;
+    }
+    .div-nav{ 
+        animation-name: menu;
+        animation: 3s infinite;
+        display: grid;
+        align-self: center;
+        justify-self: center;
+        grid-area: 1 / 4 / 3 / 5; 
+        font-size: 36px;
+        background-color:darkgoldenrod;
+    }
+    .div-nav ul li{
+        list-style: none;
+    }
+    .div-nav ul li a{
+        text-decoration: none;
+        color: orangered;
+        transition:transform 1000ms ease;
+    }
+    .div-nav ul li a:hover{
+        text-decoration: none;
+        color: green;
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    }
+    .imagen-blog { 
+        grid-area: 3 / 1 / 6 / 3; 
+        background-image: url(../imagenes/taller.jpg);
+        background-size: cover;
+        border: 2px solid black;
+    }
+    .imagen-titulo-blog { 
+        grid-area: 3 / 3 / 4 / 5; 
+        justify-self: center;
+        align-self: center;
+    }
+    .parrafo-blog { 
+        grid-area: 4 / 3 / 6 / 5; 
+        justify-self: center;
+        align-self: center;
+    }
+    .titulo-pie { 
+        grid-area: 6 / 1 / 7 / 3; 
+        justify-self: center;
+        align-self: center;
+    }
+    .imagen-pie { 
+        grid-area: 7 / 1 / 8 / 3; 
+        background-image: url(../imagenes/servicio.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+     
+    }
+    .parrafo-blog-pie { 
+        grid-area: 8 / 1 / 9 / 3; 
+        justify-self: center;
+        align-self: center;
+    }
+    .titulo-dos-pie { 
+        grid-area: 6 / 3 / 7 / 5; 
+        justify-self: center;
+        align-self: center;
+    }
+    .imagen-2-blog-pie { 
+        grid-area: 7 / 3 / 9 / 5; 
+        background-image: url(../imagenes/entretenimiento.jpg);
+        background-size: cover;
+    }
+    @keyframes menu{
+        0%{
+            width:100px;
+        }
+        100%{
+           width:200px; 
+        }
+    }
+
+@media (max-width:768px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .contenedor-blog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+        
+        .titulo-menu { 
+            grid-area: 1 / 1 / 2 / 2; 
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            width: 100%;
+        }
+        h1{
+            width: 100%;
+        }
+        .contenedor-logo { 
+            grid-area: 2 / 1 / 3 / 2; 
+            width: 100%;
+        }
+        .parrafo-menu { grid-area: 1 / 2 / 2 / 3; }
+        .div-nav { grid-area: 2 / 2 / 3 / 3; }
+        .imagen-blog { 
+            grid-area: 3 / 1 / 5 / 2; 
+            width: 100%;
+            background-size: cover;
+        }
+        .imagen-titulo-blog { 
+            grid-area: 3 / 2 / 4 / 3; 
+            width: 100%;
+        }
+        .parrafo-blog { grid-area: 4 / 2 / 5 / 3; }
+        .titulo-pie { grid-area: 5 / 1 / 7 / 2; }
+        .imagen-pie { 
+            grid-area: 7 / 1 / 8 / 3; 
+            background-image: url(../imagenes/logo-2.png);
+            background-size: cover;
+            width: 20%;
+        }
+        .parrafo-blog-pie { grid-area: 7 / 1 / 8 / 2; }
+        .parrafo-blog-pie { grid-area: 8 / 1 / 9 / 2; }
+        .titulo-dos-pie { grid-area: 5 / 2 / 7 / 3; }
+        .imagen-2-blog-pie { grid-area: 7 / 2 / 9 / 3; }
+}

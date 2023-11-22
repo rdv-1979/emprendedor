@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: orange;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height:20px;
+}
+
+header{
+    color: white;
+    position: fixed;
+    top:0;
+    z-index:1;
+}
+.ayudante{
+    position:fixed;
+    z-index:1;
+    top:370px;
+    left:900px;
+    width:80px;
+    border-radius:50%;
+    transition: transform 200ms ease;
+}
+.ayudante:hover{
+    transform: translate(20px);
+}
+.contenedor-header{
+    height:105px;
+    width:980px;
+    border:2px solid black;
+    display:flex;
+    justify-content:left;
+}
+.logo{
+    padding: 0px 0px 5px 2px;
+    width:105px;
+    height:100px;
+    position: absolute;
+    align-items: start;
+    padding-left: 0;
+}
+.contenedor-logo{
+    position:absolute;
+    width:105px;
+    height:105px;
+    margin-top:2px;
+}
+
+.contenedor-titulo-p-menu{
+    position:absolute;
+    border: 2px solid black;
+    width:865px;
+    height:98px;
+    background-color:gray;
+    left:112px;
+    margin-top:2px;
+    display: flex;
+}
+.contenedor-titulo-p-menu:hover{
+    font-family:italic;
+}
+.div-titulo{
+    justify-content: left;
+    width:165px;
+    height:40px;
+}
+.titulo-menu{
+    justify-content: left;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding: 5px 0px 0px 5px;
+    width:165px;
+    height:40px;
+}
+.div-parrafo{
+    position: absolute;
+    top:30px;
+    left:5px;
+    height: 60px;
+}
+.parrafo-menu{
+    justify-content: left;
+    align-items: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    left:0px;
+    top:25px;
+    width:400px;
+    font-size:13px;
+}
+.div-nav{
+    position: absolute;
+    left: 420px;
+    top: 30px;
+    width: 300px;
+    height: 40px;
+}
+.div-ul{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 300px;
+}
+.barra-nav{
+    align-items: center;
+    width: 300px;
+    height: 40px;
+}
+.enlace-home{
+    color:#E55604;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+.enlace-home:hover{
+    color:green;
+}
+.enlace-productos{
+    color:#E55604;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+.enlace-productos:hover{
+    color:green;
+}
+.enlace-contactos{
+    color:#E55604;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+.enlace-contactos:hover{
+    color:green;
+}
+.enlace-blog{
+    color:#E55604;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+.enlace-blog:hover{
+    color:green;
+}
+h3{
+    color:#265773;
+    text-align: center;
+    text-decoration: underline;
+}
+ul{
+    list-style: none;
+}
+
+.main-principal{
+    position:absolute;
+    top:30px;
+    border:2px solid black;
+    height:360px;
+    width:980px;
+    margin-top:90px;
+    margin-left:0px;
+    overflow: hidden;
+    transition: transform 200ms ease;
+}
+.main-principal:hover{
+    transform:scale(1.05);
+}
+.imagen-emprendedor{
+    width:300px;
+    height:200px;
+    border:none;
+}
+.seccionUno{
+    background-color: orange;
+    border:none;
+    position:absolute;
+    top:90px;
+    left:40px;
+}
+.div-seccion-dos-main{
+    display: flex;
+    justify-content:start;
+    width: 330px;
+    height: 200px;
+    margin-top: 60px;
+    margin-left: 400px;
+}
+#subtituloUno{
+    height: 40px;
+}
+.parrafoDos{
+    position: absolute;
+    top: 120px;
+    color: #013300;
+    width:300px;
+    font-size:13px;
+    margin-left:0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.contenedor-pie{
+    position: absolute;
+    top:365px;
+    margin-top:0px;
+    margin-left:0px;
+    width:980px;
+    height:300px;
+    border:2px solid black;
+}
+.contenedor-pie-hijo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:450px;
+    height:200px;
+    margin-left:60px;
+}
+.contenedor-subtituloDos{
+    align-items: start;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 130px;
+}
+.subtituloDos{
+    font-size: 20px;
+    width:220px;
+}
+.contenedor-subtituloTres{
+    align-items: start;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 80px;
+}
+.subtituloTres{
+    font-size: 20px;
+    width:80px;
+}
+.parrafoUno{
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    width:400px;
+    top: 120px;
+}
+.nav-pie{
+    position: absolute;
+    bottom: 20px;
+    width: 330px;
+    height: 50px;
+    transition:transform 1000ms ease;
+}
+.nav-pie:hover{
+    transform:scale(1.02);
+    box-shadow:5px 5px 5px 5px rgba(0,0,0,0.5);
+}
+.ul-pie{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 330px;
+    height: 50px;
+}
+.ul-pie li{
+    width: 50px;
+    height: 50px;
+}
+.wp{
+    width:50px;
+    height:50px;
+}
+.fb{
+    width:50px;
+    height:50px;
+}
+.in{
+    width:50px;
+    height:50px;
+}
+.tw{
+    width:50px;
+    height:50px; 
+}
+.contenedor-pie-hijo-dos{
+    position: absolute;
+    top:90px;
+    width:450px;
+    left:500px;
+}
+.parrafoTres{
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width:300px;
+    font-size:16px;
+    margin-left:0px;
+    margin-top: 7px;
+}
+
+
+.seccion-main-productos{
+    position: absolute;
+    top:120px;
+    width: 980px;
+    height: 460px;
+    border: 1px solid black;
+}
+.contenedor-pie-productos{
+    position:absolute;
+    top:585px;
+    margin-top:0px;
+    margin-left:0px;
+    width:980px;
+    height:300px;
+    border:2px solid black;
+}
+
+
+.comida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:lightblue;
+    margin-top:0px;
+    width:473px;
+    height:220px;
+    border:2px solid black;
+}
+.titulo-comida{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width:100px;
+}
+.parrafo-comida{
+    position: absolute;
+    left: 10px;
+    top: 50px;
+    margin-top:0;
+    margin-bottom: 0;
+    width:250px;
+}
+.hamburguesa{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:10px;
+    left:260px;
+}
+
+.ceramica{
+    background-color:brown;
+    color:cyan;
+    position:absolute;
+    top: 0px;
+    margin-top:0px;
+    left:505px;
+    width:473px;
+    height:220px;
+    border:2px solid black;
+}
+.titulo-ceramica{
+    width:250px;
+    color:cyan;
+}
+.parrafo-ceramica{
+    margin-top:0;
+    width:250px;
+}
+.jarron{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:10px;
+    left:260px;
+}
+.ropa{
+    background-color:white;
+    color:black;
+    position:absolute;
+    margin-top:0px;
+    left:0px;
+    top:230px;
+    width:473px;
+    height:220px;
+    border:2px solid black;
+}
+.titulo-ropa{
+    width:250px;
+    color:black;
+}
+.parrafo-ropa{
+    margin-top:0;
+    width:250px;
+}
+.imagen-ropa{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:10px;
+    left:260px;
+}
+
+.tortas{
+    background-color:blue;
+    color:red;
+    position:absolute;
+    margin-top:0px;
+    left:505px;
+    top:230px;
+    width:473px;
+    height:220px;
+    border:2px solid black;
+}
+.titulo-tortas{
+    width:220px;
+    color:red;
+}
+.parrafo-tortas{
+    margin-top:0;
+    width:220px;
+}
+.imagen-tortas{
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:10px;
+    left:260px;
+}
+/**-------------------grid en formularios de contacto-------------*/
+
+.contenedor-pie-contactos{
+    position:absolute;
+    top:500px;
+    margin-top:0px;
+    margin-left:0px;
+    width:980px;
+    height:300px;
+    border:2px solid black;
+}
+.seccion-contactos{
+    position:absolute;
+    top:120px;
+    width:950px;
+    height:450px;
+}
+.div-contactos{
+    border:2px solid black;
+    background-color:#C2c2c2;
+    color:black;
+    width:485px;
+    height:375px;
+}
+.titulo-contacto{
+    width:100px;
+    color:black;
+}
+.formulario-contactos{
+    position:absolute;
+    background-color:#C2c2c2;
+    top:0px;
+    left:495px;
+    border:2px solid black;
+    width:485px;
+    height:375px;
+}
+.btn-aceptar{
+    position:absolute;
+    background-color:green;
+    color:white;
+    left:20px;
+    top:325px;
+    transition:transform 200ms ease;
+}
+.btn-aceptar:hover{
+    position:absolute;
+    background-color:blue;
+    color:black;
+    left:20px;
+    top:325px;
+    cursor:pointer;
+    transform:scale(1.5);
+    border-radius:10px;
+}
+.formulario{
+    width:485px;
+    height:375px;
+}
+.label-nombre{
+    position:absolute;
+    left:20px;
+    top:20px;
+}
+.input-nombre{
+    position:absolute;
+    left:100px;
+    top:20px;
+}
+.label-asunto{
+    position:absolute;
+    left:20px;
+    top:70px;
+}
+.input-asunto{
+    position:absolute;
+    left:100px;
+    top:70px;
+}
+.label-descripcion{
+    position:absolute;
+    left:20px;
+    top:120px;
+}
+.input-descripcion{
+    position:absolute;
+    left:100px;
+    top:120px;
+    resize:none;
+}
+.texto-contacto{
+    margin-left: 10px;
+}
+/*-----------------------fin formulario contacto---------------*/
+
+
+/*------------jquery media responsive index.html------*/
+
+
+@media (max-width:768px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .header{
+        width: 100%;
+    }
+    .contenedor-header{
+        display: block;
+        width: 755px;
+    }
+    .contenedor-logo{
+        width: 80px;
+    }
+    .logo{
+        width: 80px;
+    }
+    .contenedor-titulo-p-menu{
+        left: 85px;
+        width: 650px;
+    }
+    .div-parrafo{
+        width: 500px;
+    }
+    .parrafo-menu{
+        width: 500px;
+        font-size: 16px;
+    }
+    .div-nav{
+        top:0px;
+        left: 550px;
+        width: 80px;
+    }
+    .div-ul{
+        display: block;
+        position: absolute;
+    }
+    .main-principal{
+        display: block;
+        width: 755px;
+    }
+    .contenedor-pie{
+        display: block;
+        width: 768px;
+    }
+    .ayudante{
+        display: block;
+        position: absolute;
+        left: 650px;
+        top: 600px;
+    }
+    .contenedor-pie-contactos{
+        width: 755px;
+    }
+    .contenedor-pie-hijo{
+        width: 400px;
+    }
+    .contenedor-pie-hijo-dos{
+        left:450px;
+    }
+    .seccion-main-productos{
+        width: 755px;
+    }
+    .comida{
+        width: 350px;
+    }
+    .parrafo-comida{
+        width: 180px;
+        font-size: 12px;
+    }
+    .hamburguesa{
+        width: 100px;
+        height: 100px;
+        left: 240px;
+        top: 60px;
+    }
+    .ceramica{
+        width: 350px;
+        left: 400px;
+    }
+    .parrafo-ceramica{
+        width: 180px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .jarron{
+        width: 100px;
+        height: 100px;
+        left: 240px;
+        top: 60px;
+    }
+    .ropa{
+        width: 350px;
+    }
+    .titulo-ropa{
+        margin-left: 20px;
+    }
+    .parrafo-ropa{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .imagen-ropa{
+        width: 100px;
+        height: 100px;
+        left: 240px;
+        top: 60px;
+    }
+    .tortas{
+        width:350px;
+        left: 400px;;
+    }
+    .titulo-tortas{
+        margin-left: 20px;
+    }
+    .parrafo-tortas{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .imagen-tortas{
+        width: 100px;
+        height: 100px;
+        left: 240px;
+        top: 60px;
+    }
+    .contenedor-pie-productos{
+        width: 755px;
+    }
+    .seccion-contactos{
+        width: 755px;
+    }
+    .div-contactos{
+        width: 350px;
+    }
+    .formulario-contactos{
+        width: 350px;
+        left: 405px;
+    }
+    .input-descripcion{
+        width: 240px;
+    }
+    .texto-contacto{
+        margin-left: 10px;
+    }
+}
