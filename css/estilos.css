@@ -76,7 +76,7 @@ header{
 }
 .div-parrafo{
     position: absolute;
-    top:30px;
+    top:40px;
     left:5px;
     height: 60px;
 }
@@ -164,11 +164,10 @@ ul{
     width:980px;
     margin-top:90px;
     margin-left:0px;
-    overflow: hidden;
     transition: transform 200ms ease;
 }
 .main-principal:hover{
-    transform:scale(1.05);
+    transform:scale(1.02);
 }
 .imagen-emprendedor{
     width:300px;
@@ -219,13 +218,13 @@ ul{
     align-items: center;
     width:450px;
     height:200px;
-    margin-left:60px;
+    margin-left:40px;
 }
 .contenedor-subtituloDos{
     align-items: start;
     margin-top: 0;
     margin-bottom: 0;
-    width: 130px;
+    width: 150px;
 }
 .subtituloDos{
     font-size: 20px;
@@ -235,7 +234,7 @@ ul{
     align-items: start;
     margin-top: 0;
     margin-bottom: 0;
-    width: 80px;
+    width: 150px;
 }
 .subtituloTres{
     font-size: 20px;
@@ -247,6 +246,7 @@ ul{
     margin-bottom: 0;
     width:400px;
     top: 120px;
+    color:black;
 }
 .nav-pie{
     position: absolute;
@@ -356,6 +356,7 @@ ul{
 }
 
 .ceramica{
+    display: flex;
     background-color:brown;
     color:cyan;
     position:absolute;
@@ -371,6 +372,9 @@ ul{
     color:cyan;
 }
 .parrafo-ceramica{
+    position: absolute;
+    left: 10px;
+    top: 50px;
     margin-top:0;
     width:250px;
 }
@@ -397,6 +401,7 @@ ul{
     color:black;
 }
 .parrafo-ropa{
+    margin-left: 10px;
     margin-top:0;
     width:250px;
 }
@@ -424,6 +429,7 @@ ul{
     color:red;
 }
 .parrafo-tortas{
+    margin-left: 10px;
     margin-top:0;
     width:220px;
 }
@@ -461,6 +467,7 @@ ul{
 .titulo-contacto{
     width:100px;
     color:black;
+    margin-left: 10px;
 }
 .formulario-contactos{
     position:absolute;
@@ -543,138 +550,286 @@ ul{
     }
     .contenedor-header{
         display: block;
-        width: 755px;
+        width: 360px;
     }
     .contenedor-logo{
-        width: 80px;
+        width: 40px;
     }
     .logo{
-        width: 80px;
+        width: 40px;
     }
     .contenedor-titulo-p-menu{
-        left: 85px;
-        width: 650px;
+        left: 42px;
+        width: 316px;
+    }
+    .div-titulo{
+        width: 100px;
+        height: 30px;
+    }
+    .titulo-menu{
+        font-size: 12px;
     }
     .div-parrafo{
-        width: 500px;
+        top:30px;
+        width: 215px;
     }
     .parrafo-menu{
-        width: 500px;
-        font-size: 16px;
+        width: 215px;
+        font-size: 9px;
+        line-height: 1.5;
     }
     .div-nav{
+        top:5px;
+        left: 217px;
+        width: 88px;
+        height: 92px;
+    }
+    .barra-nav{
         top:0px;
-        left: 550px;
-        width: 80px;
+        left: 217px;
+        width: 88px;
+        height: 92px;
     }
     .div-ul{
         display: block;
         position: absolute;
+        width: 88px;
+        height: 92px;
     }
+    .enlace-home{
+        font-size: 16px;
+    }
+    .enlace-productos{
+        font-size: 16px;
+    }
+    .enlace-contactos{
+        font-size: 16px;
+    }
+    .enlace-blog{
+        font-size: 16px;
+    }
+
+/*---------fin header------*/
+/*---------main------------*/
     .main-principal{
         display: block;
-        width: 755px;
+        top: 120px;
+        margin-top: 0px;
+        width: 358px;
+        height: 360px;
     }
-    .contenedor-pie{
+    .seccionUno{
         display: block;
-        width: 768px;
+        width: 170px;
+        left: 5px;
+    }
+    .imagen-emprendedor{
+        width: 170px;
+        height: 200px;
+    }
+    .div-seccion-dos-main{
+        display: block;
+        width: 170px;
+        margin-left: 175px;
+        margin-top: 90px;
+    }
+    .parrafoDos{
+        display: block;
+        width: 170px;
+    }
+    /*------fin main------*/
+    /*------footer--------*/
+    .contenedor-pie-contactos{
+        display: block;
+        position: absolute;
+        margin-left: 0px;
+        width: 358px;
+        height: 250px;
     }
     .ayudante{
         display: block;
-        position: absolute;
-        left: 650px;
-        top: 600px;
-    }
-    .contenedor-pie-contactos{
-        width: 755px;
+        left: 260px;
+        top: 490px;
     }
     .contenedor-pie-hijo{
-        width: 400px;
+        display: block;
+        position: absolute;
+        width: 170px;
+        left:5px;
+        top: 15px;
+        margin-left: 0px;
+    }
+    .parrafoUno{
+        font-size: 12px;
+        width: 150px;
+        height: 80px;
+        top: 30px;
+    }
+    .nav-pie{
+        width: 170px;
+    }
+    .ul-pie{
+        width: 170px;
+    }
+    .ul-pie .wp{
+        width: 30px;
+        height: 30px;
+    }
+    .ul-pie .tw{
+        width: 30px;
+        height: 30px;
+    }
+    .ul-pie .in{
+        width: 30px;
+        height: 30px;
+    }
+    .ul-pie .fb{
+        width: 30px;
+        height: 30px;
     }
     .contenedor-pie-hijo-dos{
-        left:450px;
+        left:170px;
+        width: 170px;
+        height: 200px;
+        top:15px;
+    }
+    .parrafoTres{
+        width: 170px;
+        height: 120px;
+        font-size: 10px;
+    }
+    .link-footer{
+        display: block;
+        position: absolute;
+        top: 125px;
     }
     .seccion-main-productos{
-        width: 755px;
+        width: 360px;
     }
     .comida{
-        width: 350px;
+        width: 170px;
+    }
+    .titulo-comida{
+        left: 10px;
+    }
+    .titulo-ceramica{
+        flex: block;
+        margin-left: 0px;
+        height: 40px;
     }
     .parrafo-comida{
-        width: 180px;
-        font-size: 12px;
+        width: 70px;
+        font-size: 10px;
     }
     .hamburguesa{
-        width: 100px;
-        height: 100px;
-        left: 240px;
+        width: 70px;
+        height: 70px;
+        left: 90px;
         top: 60px;
     }
     .ceramica{
-        width: 350px;
-        left: 400px;
+        width: 170px;
+        left: 185px;
     }
     .parrafo-ceramica{
-        width: 180px;
-        font-size: 12px;
-        margin-left: 10px;
+        width: 70px;
+        font-size: 10px;
+        margin-left: 0px;
     }
     .jarron{
-        width: 100px;
-        height: 100px;
-        left: 240px;
+        width: 70px;
+        height: 70px;
+        left: 90px;
         top: 60px;
     }
     .ropa{
-        width: 350px;
+        width: 170px;
     }
     .titulo-ropa{
-        margin-left: 20px;
+        width: 80px;
     }
     .parrafo-ropa{
+        width: 70px;
         margin-left: 10px;
-        font-size: 12px;
+        font-size: 10px;
     }
     .imagen-ropa{
-        width: 100px;
-        height: 100px;
-        left: 240px;
+        width: 70px;
+        height: 70px;
+        left: 90px;
         top: 60px;
     }
     .tortas{
-        width:350px;
-        left: 400px;;
+        width:170px;
+        left: 185px;;
     }
     .titulo-tortas{
-        margin-left: 20px;
+        width: 100px;
+        margin-left: 0px;
     }
     .parrafo-tortas{
         margin-left: 10px;
-        font-size: 12px;
+        font-size: 10px;
+        width: 70px;
     }
     .imagen-tortas{
-        width: 100px;
-        height: 100px;
-        left: 240px;
+        width: 70px;
+        height: 70px;
+        left: 90px;
         top: 60px;
     }
     .contenedor-pie-productos{
-        width: 755px;
+        width: 358px;
     }
+    /*------contactos formulario*/
     .seccion-contactos{
-        width: 755px;
+        width: 360px;
+        height: 380px;
     }
     .div-contactos{
-        width: 350px;
+        width: 170px;
     }
-    .formulario-contactos{
-        width: 350px;
-        left: 405px;
-    }
-    .input-descripcion{
-        width: 240px;
+    .titulo-contacto{
+        margin-top: 5px;
+        margin-left: 5px;
+        left: 5px;
     }
     .texto-contacto{
-        margin-left: 10px;
+        margin-left: 5px;
+        width: 150px;
+        height: 120px;
     }
+    .formulario-contactos{
+        width: 170px;
+        left: 185px;
+    }
+    .input-descripcion{
+        width: 110px;
+        height: 200px;
+        left: 50px;
+    }
+    .input-nombre{
+        left: 50px;
+        width: 110px;
+    }
+    .input-asunto{
+        left: 50px;
+        width: 110px;
+    }
+    .label-nombre{
+        font-size: 10px;
+        left: 7px;
+    }
+    .label-asunto{
+        font-size: 10px;
+        left: 7px;
+    }
+    .label-descripcion{
+        font-size: 10px;
+        left: 7px;
+    }
+    .btn-aceptar:hover{
+        transform: scale(1.2);
+    }
+
 }
